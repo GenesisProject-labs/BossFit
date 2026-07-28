@@ -9,6 +9,17 @@
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 </head>
 <body>
+    <!-- LOADER SCREEN -->
+    <div class="loader-screen" id="loaderScreen">
+        <div class="loader-content">
+            <img src="media/logo/logo bossfittt.png" alt="Bossfit Logo" class="loader-logo">
+            <div class="loader-bar-container">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            <p class="loader-text">Cargando experiencia fitness...</p>
+        </div>
+    </div>
+
     <!-- HEADER / NAVEGACIÓN -->
     <header class="header" id="mainHeader">
         <nav class="navbar">
@@ -45,7 +56,7 @@
             <h1 class="hero-title">Transforma Tu Cuerpo y Alcanza <span class="hero-title-white">Tu Máximo Potencial</span></h1>
             <p class="hero-subtitle">En Bossfit te ofrecemos la experiencia fitness más completa de la República Dominicana con entrenadores certificados, equipamiento de última generación y una comunidad motivadora que te acompañará en cada paso de tu transformación</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary">Comenzar Ahora</button>
+                <button class="btn btn-primary" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">Comenzar Ahora</button>
             </div>
         </div>
     </section>
@@ -209,7 +220,6 @@
                         </div>
                     </div>
                     <button class="plan-btn" onclick="selectPlanAndOpen('Starter - RD$ 1,499/mes')">Quiero este plan</button>
-                    <a href="#" class="plan-link">Más información →</a>
                 </div>
 
                 <!-- Plan Premium (Destacado) -->
@@ -263,7 +273,7 @@
                         </div>
                     </div>
                     <button class="plan-btn plan-btn-primary" onclick="selectPlanAndOpen('Premium - RD$ 2,999/mes - Mas Popular')">Quiero este plan</button>
-                    <a href="#" class="plan-link">Más información →</a>
+
                 </div>
 
                 <!-- Plan Elite -->
@@ -315,7 +325,6 @@
                         </div>
                     </div>
                     <button class="plan-btn" onclick="selectPlanAndOpen('Elite - RD$ 4,999/mes')">Quiero este plan</button>
-                    <a href="#" class="plan-link">Más información →</a>
                 </div>
             </div>
 
@@ -349,11 +358,6 @@
                     </svg>
                     <span>Atención personalizada</span>
                 </div>
-            </div>
-
-            <!-- Botón Comparar -->
-            <div class="plans-actions">
-                <button class="btn-compare" id="compareBtn">Comparar todos los planes</button>
             </div>
 
             <!-- FAQ -->
@@ -438,7 +442,7 @@
                             <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Mejora la coordinación</li>
                             <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Incrementa la fuerza</li>
                         </ul>
-                        <button class="class-btn">Ver horarios →</button>
+                        <button class="class-btn" onclick="showScheduleAlert()">Ver horarios →</button>
                     </div>
                 </div>
 
@@ -458,7 +462,7 @@
                             <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Disciplina</li>
                             <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Flexibilidad</li>
                         </ul>
-                        <button class="class-btn">Ver horarios →</button>
+                        <button class="class-btn" onclick="showScheduleAlert()">Ver horarios →</button>
                     </div>
                 </div>
 
@@ -478,7 +482,7 @@
                             <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Quema grasa</li>
                             <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Ambiente divertido</li>
                         </ul>
-                        <button class="class-btn">Ver horarios →</button>
+                        <button class="class-btn" onclick="showScheduleAlert()">Ver horarios →</button>
                     </div>
                 </div>
 
@@ -540,7 +544,7 @@
                 <p class="cta-subtitle">Elige la clase que mejor se adapte a tus objetivos y comienza a entrenar con nosotros.</p>
                 <div class="cta-buttons">
                     <button class="btn-primary">Reservar mi clase</button>
-                    <button class="btn-secondary">Ver horarios</button>
+                    <button class="btn-secondary" onclick="showScheduleAlert()">Ver horarios</button>
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@
 // ========================================
 
 document.addEventListener('DOMContentLoaded', function() {
+    initLoader();
     initMobileMenu();
     initFormValidation();
     initSmoothScroll();
@@ -12,6 +13,44 @@ document.addEventListener('DOMContentLoaded', function() {
     initFAQ();
     initCompareButton();
 });
+
+// ========================================
+// LOADER SCREEN
+// ========================================
+
+function initLoader() {
+    const loaderScreen = document.getElementById('loaderScreen');
+    const loaderBar = document.getElementById('loaderBar');
+    
+    if (loaderScreen) {
+        // Simular carga y mostrar barra de progreso
+        let progress = 0;
+        const interval = setInterval(() => {
+            progress += Math.random() * 25;
+            if (progress > 100) progress = 100;
+            loaderBar.style.width = progress + '%';
+            
+            if (progress === 100) {
+                clearInterval(interval);
+                // Esperar a que termine la animación del loader
+                setTimeout(() => {
+                    loaderScreen.classList.add('hidden');
+                }, 1600);
+            }
+        }, 250);
+        
+        // Asegurar que el loader desaparece después de 4 segundos máximo
+        setTimeout(() => {
+            if (!loaderScreen.classList.contains('hidden')) {
+                loaderBar.style.width = '100%';
+                clearInterval(interval);
+                setTimeout(() => {
+                    loaderScreen.classList.add('hidden');
+                }, 600);
+            }
+        }, 4000);
+    }
+}
 
 // ========================================
 // MENÚ MÓVIL
@@ -333,6 +372,100 @@ document.querySelectorAll('.btn').forEach(btn => {
         setTimeout(() => ripple.remove(), 600);
     });
 });
+
+// ========================================
+// ALERTA DE HORARIOS NO DISPONIBLES
+// ========================================
+
+function showScheduleAlert() {
+    // Crear overlay
+    const overlay = document.createElement('div');
+    overlay.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2000;
+        animation: fadeIn 0.3s ease;
+    `;
+    
+    // Crear modal
+    const modal = document.createElement('div');
+    modal.style.cssText = `
+        background: #111111;
+        border: 2px solid #E53935;
+        border-radius: 16px;
+        padding: 2.5rem;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 20px 60px rgba(229, 57, 53, 0.3);
+        text-align: center;
+        animation: slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    `;
+    
+    // Crear contenido
+    const content = document.createElement('div');
+    content.innerHTML = `
+        <div style="margin-bottom: 1.5rem;">
+            <svg style="width: 60px; height: 60px; color: #E53935; margin: 0 auto;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+        </div>
+        <h2 style="color: #FFFFFF; font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: 600;">Horarios No Disponibles</h2>
+        <p style="color: #AAAAAA; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">
+            Los horarios estarán disponibles pronto. Por favor, contacta con nuestro equipo para más información.
+        </p>
+        <button id="closeScheduleAlert" style="
+            background: #E53935;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        " onmouseover="this.style.background='#D32F2F'" onmouseout="this.style.background='#E53935'">
+            Entendido
+        </button>
+    `;
+    
+    modal.appendChild(content);
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+    
+    // Cerrar modal
+    const closeBtn = document.getElementById('closeScheduleAlert');
+    closeBtn.addEventListener('click', () => {
+        overlay.style.animation = 'fadeOut 0.3s ease';
+        setTimeout(() => overlay.remove(), 300);
+    });
+    
+    // Cerrar con Escape
+    const handleEscape = (e) => {
+        if (e.key === 'Escape') {
+            overlay.style.animation = 'fadeOut 0.3s ease';
+            setTimeout(() => overlay.remove(), 300);
+            document.removeEventListener('keydown', handleEscape);
+        }
+    };
+    
+    document.addEventListener('keydown', handleEscape);
+    
+    // Cerrar al hacer click fuera
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.style.animation = 'fadeOut 0.3s ease';
+            setTimeout(() => overlay.remove(), 300);
+        }
+    });
+}
 
 // ========================================
 // FAQ ACCORDION
