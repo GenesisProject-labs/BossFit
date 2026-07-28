@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bossfit Wellness Club - Tu gimnasio de confianza</title>
+    <meta name="description" content="Bossfit Wellness Club - Únete a nuestra comunidad fitness y alcanza tus objetivos de salud y bienestar.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="header" id="mainHeader">
+        <nav class="navbar">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="media/logo/logo bossfittt.png" alt="Bossfit Logo" class="logo-img">
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#planes" class="nav-link">Planes</a></li>
+                    <li><a href="#clases" class="nav-link">Clases</a></li>
+                    <li><a href="#ubicaciones" class="nav-link">Ubicaciones</a></li>
+                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="#" class="nav-link btn-cta">Unirse Ahora</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="hero-carousel" id="heroCarousel">
+            <img src="media/Hero/1.png" alt="Hero Image 1" class="hero-image active">
+            <img src="media/Hero/2.png" alt="Hero Image 2" class="hero-image">
+            <img src="media/Hero/3.png" alt="Hero Image 3" class="hero-image">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Transforma Tu Cuerpo y Alcanza <span class="hero-title-white">Tu Máximo Potencial</span></h1>
+            <p class="hero-subtitle">En Bossfit te ofrecemos la experiencia fitness más completa de la República Dominicana con entrenadores certificados, equipamiento de última generación y una comunidad motivadora que te acompañará en cada paso de tu transformación</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Comenzar Ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOTIVATIONAL BANNER -->
+    <section class="motivational-banner">
+        <div class="banner-text-container">
+            <div class="banner-text">
+                <span class="banner-phrase">Sé la mejor versión de ti mismo - Tu cuerpo es tu templo - No hay límites para lo que puedes lograr - Cada gota de sudor es progreso - Empieza hoy, no mañana - La disciplina vence al miedo - Transforma tus objetivos en realidad - Sé la mejor versión de ti mismo - Tu cuerpo es tu templo - No hay límites para lo que puedes lograr - Cada gota de sudor es progreso - Empieza hoy, no mañana - La disciplina vence al miedo - Transforma tus objetivos en realidad - </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CARACTERÍSTICAS -->
+    <section class="features" id="features">
+        <div class="features-wrapper">
+            <div class="features-header">
+                <span class="features-label">NUESTRAS VENTAJAS</span>
+                <h2 class="features-title">¿Por Qué Elegir Bossfit?</h2>
+                <div class="features-line"></div>
+                <p class="features-subtitle">Entrena con equipos de última generación, entrenadores certificados y una comunidad que te impulsa a alcanzar tus objetivos.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2.18"></rect>
+                            <line x1="7" y1="2" x2="7" y2="22"></line>
+                            <line x1="17" y1="2" x2="17" y2="22"></line>
+                            <line x1="2" y1="7" x2="22" y2="7"></line>
+                            <line x1="2" y1="17" x2="22" y2="17"></line>
+                        </svg>
+                    </div>
+                    <div class="feature-card-image">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=400&fit=crop" alt="Equipamiento Moderno">
+                    </div>
+                    <div class="feature-card-content">
+                        <h3 class="feature-card-title">Equipamiento Moderno</h3>
+                        <p class="feature-card-description">Máquinas de última generación para entrenar con máxima seguridad y rendimiento.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="feature-card-image">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=400&fit=crop" alt="Entrenadores Certificados">
+                    </div>
+                    <div class="feature-card-content">
+                        <h3 class="feature-card-title">Entrenadores Certificados</h3>
+                        <p class="feature-card-description">Profesionales altamente capacitados que te acompañan en cada etapa.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M2 12h20"></path>
+                        </svg>
+                    </div>
+                    <div class="feature-card-image">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&h=400&fit=crop" alt="Asesoría Nutricional">
+                    </div>
+                    <div class="feature-card-content">
+                        <h3 class="feature-card-title">Asesoría Nutricional</h3>
+                        <p class="feature-card-description">Planes personalizados para potenciar tus resultados dentro y fuera del gimnasio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ESTADÍSTICAS -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">+2,000</div>
+                    <div class="stat-label">Miembros Activos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">+20</div>
+                    <div class="stat-label">Clases por Semana</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Sucursales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Años de Experiencia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PLANES -->
+    <section class="plans" id="planes">
+        <div class="plans-wrapper">
+            <!-- Header -->
+            <div class="plans-header">
+                <span class="plans-label">MEMBRESÍAS</span>
+                <h2 class="plans-title">Nuestros Planes</h2>
+                <div class="plans-line"></div>
+                <p class="plans-subtitle">Encuentra el plan perfecto para alcanzar tus objetivos y comienza hoy tu transformación</p>
+            </div>
+
+            <!-- Tarjetas de Planes -->
+            <div class="plans-grid">
+                <!-- Plan Starter -->
+                <div class="plan-card" data-plan="starter">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Starter</h3>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">RD$</span>
+                        <span class="amount">1,499</span>
+                        <span class="period">/mes</span>
+                    </div>
+                    <p class="plan-flex">Sin permanencia</p>
+                    <div class="plan-benefits">
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Acceso 24/7</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Equipos Premium</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Duchas</span>
+                        </div>
+                        <div class="benefit-item inactive">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Entrenador</span>
+                        </div>
+                        <div class="benefit-item inactive">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Asesoría Nutricional</span>
+                        </div>
+                    </div>
+                    <button class="plan-btn" onclick="selectPlanAndOpen('Starter - RD$ 1,499/mes')">Quiero este plan</button>
+                    <a href="#" class="plan-link">Más información →</a>
+                </div>
+
+                <!-- Plan Premium (Destacado) -->
+                <div class="plan-card plan-premium" data-plan="premium">
+                    <div class="plan-glow"></div>
+                    <div class="plan-popular">⭐ Más Popular</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Premium</h3>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">RD$</span>
+                        <span class="amount">2,999</span>
+                        <span class="period">/mes</span>
+                    </div>
+                    <p class="plan-flex">Cancela cuando quieras</p>
+                    <div class="plan-benefits">
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Acceso 24/7</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Clases Grupales</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Asesoría Nutricional</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>App Premium</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Entrenador Certificado</span>
+                        </div>
+                    </div>
+                    <button class="plan-btn plan-btn-primary" onclick="selectPlanAndOpen('Premium - RD$ 2,999/mes - Mas Popular')">Quiero este plan</button>
+                    <a href="#" class="plan-link">Más información →</a>
+                </div>
+
+                <!-- Plan Elite -->
+                <div class="plan-card" data-plan="elite">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Elite</h3>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">RD$</span>
+                        <span class="amount">4,999</span>
+                        <span class="period">/mes</span>
+                    </div>
+                    <p class="plan-flex">Sin permanencia</p>
+                    <div class="plan-benefits">
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Acceso 24/7</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Entrenador Ilimitado</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Área VIP</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Nutrición VIP</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 10l2 2 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Eventos Exclusivos</span>
+                        </div>
+                    </div>
+                    <button class="plan-btn" onclick="selectPlanAndOpen('Elite - RD$ 4,999/mes')">Quiero este plan</button>
+                    <a href="#" class="plan-link">Más información →</a>
+                </div>
+            </div>
+
+            <!-- Franja de Confianza -->
+            <div class="trust-banner">
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="11" stroke="#E53935" stroke-width="2"/>
+                        <path d="M8 12l2 2 6-6" stroke="#E53935" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Sin contrato obligatorio</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="11" stroke="#E53935" stroke-width="2"/>
+                        <path d="M8 12l2 2 6-6" stroke="#E53935" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Inscripción rápida</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="11" stroke="#E53935" stroke-width="2"/>
+                        <path d="M8 12l2 2 6-6" stroke="#E53935" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Entrenadores certificados</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="11" stroke="#E53935" stroke-width="2"/>
+                        <path d="M8 12l2 2 6-6" stroke="#E53935" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Atención personalizada</span>
+                </div>
+            </div>
+
+            <!-- Botón Comparar -->
+            <div class="plans-actions">
+                <button class="btn-compare" id="compareBtn">Comparar todos los planes</button>
+            </div>
+
+            <!-- FAQ -->
+            <div class="plans-faq">
+                <h3 class="faq-title">Preguntas Frecuentes</h3>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿La inscripción está incluida?</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, la inscripción tiene un costo adicional de RD$500 que se aplica solo una vez al momento de tu afiliación.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Puedo cambiar de plan?</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, puedes cambiar de plan en cualquier momento desde tu cuenta o contactando con nuestro equipo. El cambio se aplica en el siguiente ciclo de facturación.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Cómo cancelo mi membresía?</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Puedes cancelar tu membresía en cualquier momento sin penalización. Solo contacta con nuestro equipo o cancela desde tu panel de control en la app.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Qué métodos de pago aceptan?</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Aceptamos tarjetas de crédito (Visa, Mastercard), débito y transferencias bancarias. También ofrecemos planes de pago mensual sin intereses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CLASES -->
+    <section class="classes" id="clases">
+        <div class="classes-wrapper">
+            <!-- Header -->
+            <div class="classes-header">
+                <span class="classes-label">ENTRENA A TU MANERA</span>
+                <h2 class="classes-title">Nuestras Clases</h2>
+                <div class="classes-line"></div>
+                <p class="classes-subtitle">Descubre clases dirigidas por instructores certificados para mejorar tu fuerza, resistencia, coordinación y bienestar.</p>
+            </div>
+
+            <!-- Grid de Clases -->
+            <div class="classes-grid">
+                <!-- Boxeo -->
+                <div class="class-card">
+                    <div class="class-badge">Más popular</div>
+                    <div class="class-image">
+                        <img src="media/boxeo.jpg" alt="Boxeo">
+                        <div class="class-overlay"></div>
+                    </div>
+                    <div class="class-content">
+                        <div class="class-icon"></div>
+                        <h3 class="class-title">BOXEO</h3>
+                        <p class="class-description">Entrena velocidad, potencia y resistencia con sesiones de alta intensidad.</p>
+                        <ul class="class-benefits">
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Quema calorías</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Mejora la coordinación</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Incrementa la fuerza</li>
+                        </ul>
+                        <button class="class-btn">Ver horarios →</button>
+                    </div>
+                </div>
+
+                <!-- Karate -->
+                <div class="class-card">
+                    <div class="class-badge">Alta intensidad</div>
+                    <div class="class-image">
+                        <img src="media/karate.jpg" alt="Karate">
+                        <div class="class-overlay"></div>
+                    </div>
+                    <div class="class-content">
+                        <div class="class-icon"></div>
+                        <h3 class="class-title">KARATE</h3>
+                        <p class="class-description">Desarrolla disciplina, técnica y defensa personal con instructores especializados.</p>
+                        <ul class="class-benefits">
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Defensa personal</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Disciplina</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Flexibilidad</li>
+                        </ul>
+                        <button class="class-btn">Ver horarios →</button>
+                    </div>
+                </div>
+
+                <!-- Zumba -->
+                <div class="class-card">
+                    <div class="class-badge">Bienestar</div>
+                    <div class="class-image">
+                        <img src="media/zumba.jpg" alt="Zumba">
+                        <div class="class-overlay"></div>
+                    </div>
+                    <div class="class-content">
+                        <div class="class-icon"></div>
+                        <h3 class="class-title">ZUMBA</h3>
+                        <p class="class-description">Diviértete mientras entrenas con clases llenas de energía y ritmo.</p>
+                        <ul class="class-benefits">
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Cardio</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Quema grasa</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Ambiente divertido</li>
+                        </ul>
+                        <button class="class-btn">Ver horarios →</button>
+                    </div>
+                </div>
+
+                <!-- Pilates -->
+                <div class="class-card">
+                    <div class="class-badge">Recomendado</div>
+                    <div class="class-image">
+                        <img src="media/pilates.jpg" alt="Pilates">
+                        <div class="class-overlay"></div>
+                    </div>
+                    <div class="class-content">
+                        <div class="class-icon"></div>
+                        <h3 class="class-title">PILATES</h3>
+                        <p class="class-description">Fortalece tu cuerpo, mejora tu postura y aumenta tu flexibilidad.</p>
+                        <ul class="class-benefits">
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Equilibrio</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Core</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Movilidad</li>
+                        </ul>
+                        <button class="class-btn">Ver horarios →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estadísticas -->
+            <div class="classes-stats">
+                <div class="stat-item">
+                    <div class="stat-number">+20</div>
+                    <div class="stat-label">Clases por semana</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">+10</div>
+                    <div class="stat-label">Entrenadores certificados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">+500</div>
+                    <div class="stat-label">Alumnos activos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Todos</div>
+                    <div class="stat-label">Principiante a avanzado</div>
+                </div>
+            </div>
+
+            <!-- Beneficios Banner -->
+            <div class="classes-benefits-banner">
+                <div class="benefits-text-container">
+                    <div class="benefits-text">
+                        <span class="benefits-phrase">Equipamiento profesional - Instructores certificados - Horarios flexibles - Ambiente motivador - Equipamiento profesional - Instructores certificados - Horarios flexibles - Ambiente motivador - </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="classes-cta">
+            <div class="cta-content">
+                <h2 class="cta-title">Empieza hoy tu transformación</h2>
+                <p class="cta-subtitle">Elige la clase que mejor se adapte a tus objetivos y comienza a entrenar con nosotros.</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary">Reservar mi clase</button>
+                    <button class="btn-secondary">Ver horarios</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN TESTIMONIOS -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Miembros</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Bossfit cambió mi vida completamente. Los entrenadores son increíbles y la comunidad es muy motivadora. ¡Recomendado 100%!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JC</div>
+                        <div class="author-info">
+                            <h4>Juan Carlos</h4>
+                            <p>Miembro desde 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Las instalaciones están muy limpias, el equipamiento es de primera y el personal siempre dispuesto a ayudar. Excelente."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <h4>María Rodríguez</h4>
+                            <p>Miembro desde 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Perdí 25 kilos en 6 meses con ayuda de mi entrenador personal. La asesoría nutricional fue clave en mi transformación."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PL</div>
+                        <div class="author-info">
+                            <h4>Pedro López</h4>
+                            <p>Miembro desde 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN UBICACIONES -->
+    <section class="locations" id="ubicaciones">
+        <div class="locations-background"></div>
+        <div class="container">
+            <div class="locations-header">
+                <span class="locations-label">ENCUÉNTRANOS</span>
+                <h2 class="locations-title">Nuestras Sucursales</h2>
+                <div class="locations-line"></div>
+                <p class="locations-subtitle">Estamos presentes en distintas zonas para que siempre tengas un Bossfit cerca de ti.</p>
+            </div>
+            
+            <div class="locations-grid">
+                <!-- Tarjeta Barrio Landia -->
+                <div class="location-card">
+                    <div class="location-card-inner">
+                        <!-- Mapa -->
+                        <div class="location-map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.866639631929!2d-70.0403815!3d18.5228957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1b3d3d3d3d3d3%3A0xd3d3d3d3d3d3d3d3!2sBarrio%20Landia!5e0!3m2!1ses!2sdo!4v1720000000" width="100%" height="250" style="border:0;border-radius:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="location-map-overlay"></div>
+                            <button class="location-map-button" onclick="window.open('https://www.google.com/maps/place/18.5228957,-70.0403815', '_blank')">
+                                Ver en Google Maps →
+                            </button>
+                        </div>
+
+                        <!-- Información de la sucursal -->
+                        <div class="location-content">
+                            <div class="location-header">
+                                <svg class="location-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <h3 class="location-name">Barrio Landia</h3>
+                                    <p class="location-city">Santo Domingo</p>
+                                </div>
+                            </div>
+
+                            <!-- Detalles -->
+                            <div class="location-details">
+                                <div class="location-detail-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                    <span>+1 (849) 460-4004</span>
+                                </div>
+                                <div class="location-detail-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span>5:00 A.M. - 12:00 A.M.</span>
+                                </div>
+                                <div class="location-detail-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Av. Principal, Barrio Landia</span>
+                                </div>
+                            </div>
+
+                            <!-- Botón -->
+                            <button class="location-action-btn" onclick="window.open('https://www.google.com/maps/place/Boss+fit+Wellness+Club+Los+alcarrizos/@18.522895782498463,-70.04038148846114,15z', '_blank')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                                Cómo llegar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Plaza Pablo Mella -->
+                <div class="location-card">
+                    <div class="location-card-inner">
+                        <!-- Mapa -->
+                        <div class="location-map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.5698!2d-70.0336411!3d18.5401137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1b2b2b2b2b2b2%3A0xb2b2b2b2b2b2b2b2!2sPlaza%20Pablo%20Mella!5e0!3m2!1ses!2sdo!4v1720000000" width="100%" height="250" style="border:0;border-radius:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="location-map-overlay"></div>
+                            <button class="location-map-button" onclick="window.open('https://www.google.com/maps/place/18.5401137,-70.0336411', '_blank')">
+                                Ver en Google Maps →
+                            </button>
+                        </div>
+
+                        <!-- Información de la sucursal -->
+                        <div class="location-content">
+                            <div class="location-header">
+                                <svg class="location-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <h3 class="location-name">Plaza Pablo Mella</h3>
+                                    <p class="location-city">Santo Domingo</p>
+                                </div>
+                            </div>
+
+                            <!-- Detalles -->
+                            <div class="location-details">
+                                <div class="location-detail-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                    <span>+1 (849) 460-4004</span>
+                                </div>
+                                <div class="location-detail-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span>5:00 A.M. - 12:00 A.M.</span>
+                                </div>
+                                <div class="location-detail-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Plaza Pablo Mella, Santo Domingo</span>
+                                </div>
+                            </div>
+
+                            <!-- Botón -->
+                            <button class="location-action-btn" onclick="window.open('https://www.google.com/maps/place/Boss+Fit+Wellness+Club/@18.540113699999996,-70.0336411,15z', '_blank')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                                Cómo llegar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Parque Las Toronjas -->
+                <div class="location-card">
+                    <div class="location-card-inner">
+                        <!-- Mapa -->
+                        <div class="location-map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.1234!2d-70.0262120!3d18.5313941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1b1b1b1b1b1b1%3A0xb1b1b1b1b1b1b1b1!2sParque%20Las%20Toronjas!5e0!3m2!1ses!2sdo!4v1720000000" width="100%" height="250" style="border:0;border-radius:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="location-map-overlay"></div>
+                            <button class="location-map-button" onclick="window.open('https://www.google.com/maps/place/18.5313941,-70.0262120', '_blank')">
+                                Ver en Google Maps →
+                            </button>
+                        </div>
+
+                        <!-- Información de la sucursal -->
+                        <div class="location-content">
+                            <div class="location-header">
+                                <svg class="location-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <h3 class="location-name">Parque Las Toronjas</h3>
+                                    <p class="location-city">Santo Domingo</p>
+                                </div>
+                            </div>
+
+                            <!-- Detalles -->
+                            <div class="location-details">
+                                <div class="location-detail-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                    <span>+1 (849) 460-4004</span>
+                                </div>
+                                <div class="location-detail-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span>5:00 A.M. - 12:00 A.M.</span>
+                                </div>
+                                <div class="location-detail-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Parque Las Toronjas, Santo Domingo</span>
+                                </div>
+                            </div>
+
+                            <!-- Botón -->
+                            <button class="location-action-btn" onclick="window.open('https://www.google.com/maps/place/Parque+la+Toronja/@18.531394164226512,-70.02621203057784,15z', '_blank')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                                Cómo llegar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PROMOCIÓN -->
+    <section class="promo">
+        <div class="container">
+            <div class="promo-content">
+                <h2>¡Únete Ahora y Obtén 1 Mes Gratis!</h2>
+                <p>Aprovecha nuestra oferta especial para nuevos miembros. Válido solo para planes anuales.</p>
+                <button class="btn btn-light" onclick="openContactModal()">Reclamar Oferta</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE CONTACTO -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeContactModal()">&times;</button>
+            <h2>Reclamar mi Oferta</h2>
+            <p>Completa el formulario y nos contactaremos contigo lo antes posible.</p>
+            <form class="contact-form" id="contactForm" onsubmit="handleContactForm(event)">
+                <input type="text" placeholder="Tu nombre" id="formName" required>
+                <input type="email" placeholder="Tu email" id="formEmail" required>
+                <input type="tel" placeholder="Tu teléfono" id="formPhone" required>
+                <select id="formPlan" class="form-select" required>
+                    <option value="">Selecciona un plan</option>
+                    <option value="Starter - RD$ 1,499/mes">Starter - RD$ 1,499/mes</option>
+                    <option value="Premium - RD$ 2,999/mes - Mas Popular">Premium - RD$ 2,999/mes - Mas Popular</option>
+                    <option value="Elite - RD$ 4,999/mes">Elite - RD$ 4,999/mes</option>
+                </select>
+                <textarea placeholder="Tu mensaje" id="formMessage" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Bossfit</h4>
+                    <p>Tu centro de bienestar y fitness de confianza en República Dominicana.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#planes">Planes</a></li>
+                        <li><a href="#clases">Clases</a></li>
+                        <li><a href="#ubicaciones">Ubicaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://api.whatsapp.com/send?phone=18494604004&text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20planes.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F%20Gracias." target="_blank" class="social-link">WhatsApp</a>
+                        <a href="https://www.instagram.com/bossfitwellnessclub/" target="_blank" class="social-link">Instagram</a>
+                        <a href="https://www.tiktok.com/@jrbossfit?_r=1" target="_blank" class="social-link">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bossfit Wellness Club. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-powered">
+                <img src="media/logo/powered-by-genesis.png" alt="Powered by Genesis" class="powered-logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
