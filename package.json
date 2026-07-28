@@ -1,0 +1,22 @@
+{
+  "name": "bossfit-wellness-club",
+  "version": "1.0.0",
+  "description": "Modern, responsive website for Bossfit Wellness Club gym in Dominican Republic",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "gym",
+    "fitness",
+    "wellness",
+    "bossfit",
+    "dominican-republic"
+  ],
+  "author": "Bossfit Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

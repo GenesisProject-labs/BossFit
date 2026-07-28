@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: bossfit-website
+    env: static
+    buildCommand: ""
+    staticPublishPath: ./
+    routes:
+      - path: /
+        match: /.*
+        src: /index.html
