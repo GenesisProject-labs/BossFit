@@ -1202,7 +1202,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .plan-premium {
         grid-column: 1 / -1;
-        max-width: 50%;
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -1223,7 +1223,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .plan-premium {
-        max-width: 100%;
+        width: 100%;
+        grid-column: 1 / -1;
+        margin: 0 auto;
         transform: scale(1);
     }
 
