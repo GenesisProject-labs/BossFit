@@ -2424,7 +2424,12 @@ h1, h2, h3, h4, h5, h6 {
     .hero {
         padding: clamp(1.5rem, 3vw, 2.5rem) clamp(12px, 2.5vw, 20px);
         padding-top: clamp(80px, 10vw, 100px);
-        min-height: 85vh;
+        min-height: 95vh;
+    }
+
+    .logo-img {
+        height: clamp(55px, 12vw, 80px);
+        max-width: 180px;
     }
 
     .hero-content {
@@ -2455,6 +2460,11 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         padding: 10px 20px;
         font-size: 0.9rem;
+    }
+
+    .logo-img {
+        height: clamp(55px, 12vw, 80px);
+        max-width: 180px;
     }
 }
 
