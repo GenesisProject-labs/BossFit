@@ -578,10 +578,11 @@ function handleContactForm(event) {
     const email = document.getElementById('formEmail').value;
     const phone = document.getElementById('formPhone').value;
     const plan = document.getElementById('formPlan').value;
+    const branch = document.getElementById('formBranch').value;
     const message = document.getElementById('formMessage').value;
     
     // Create WhatsApp message with form data
-    const whatsappMessage = `Hola, me gustaria informacion sobre el plan:\n\nNombre: ${name}\nEmail: ${email}\nTelefono: ${phone}\nPlan de Interes: ${plan}\nMensaje: ${message}`;
+    const whatsappMessage = `Hola, me gustaria informacion sobre el plan:\n\nNombre: ${name}\nEmail: ${email}\nTelefono: ${phone}\nPlan de Interes: ${plan}\nSucursal: ${branch}\nMensaje: ${message}`;
     
     // Encode message for URL
     const encodedMessage = encodeURIComponent(whatsappMessage);
@@ -591,7 +592,7 @@ function handleContactForm(event) {
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
     
     // Log the submission
-    console.log('Form submitted:', { name, email, phone, plan, message });
+    console.log('Form submitted:', { name, email, phone, plan, branch, message });
     
     // Reset form and close modal
     event.target.reset();
