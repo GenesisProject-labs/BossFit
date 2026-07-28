@@ -602,4 +602,73 @@ function handleContactForm(event) {
     window.open(whatsappUrl, '_blank');
 }
 
+// ========================================
+// MODAL - RESERVA DE CLASES
+// ========================================
+
+function openClassReservationModal() {
+    const modal = document.getElementById('classReservationModal');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeClassReservationModal() {
+    const modal = document.getElementById('classReservationModal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+function handleClassReservation(event) {
+    event.preventDefault();
+    
+    // Get form data
+    const name = document.getElementById('classFormName').value;
+    const email = document.getElementById('classFormEmail').value;
+    const phone = document.getElementById('classFormPhone').value;
+    const className = document.getElementById('classFormClass').value;
+    const branch = document.getElementById('classFormBranch').value;
+    
+    // Create WhatsApp message with reservation data
+    const whatsappMessage = `Hola, me gustaria reservar una clase:\n\nNombre: ${name}\nEmail: ${email}\nTelefono: ${phone}\nClase: ${className}\nSucursal: ${branch}`;
+    
+    // Encode message for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // WhatsApp API URL
+    const whatsappNumber = '18494604004';
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
+    
+    // Log the submission
+    console.log('Class reservation submitted:', { name, email, phone, className, branch });
+    
+    // Reset form and close modal
+    event.target.reset();
+    closeClassReservationModal();
+    
+    // Open WhatsApp with the message
+    window.open(whatsappUrl, '_blank');
+}
+
+// Close class reservation modal when clicking outside of it
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('classReservationModal');
+    if (event.target === modal) {
+        closeClassReservationModal();
+    }
+});
+
+// Close class reservation modal on Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const modal = document.getElementById('classReservationModal');
+        if (modal && modal.classList.contains('active')) {
+            closeClassReservationModal();
+        }
+    }
+});
+
 console.log('✅ Bossfit - Script principal cargado correctamente');
